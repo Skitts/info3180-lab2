@@ -1,0 +1,73 @@
+{% extends "base.html" %} <!--extending base-->
+
+{% block main %}         <!--tells where the code starts so the jinja template works on the html inside this block-->
+
+<!Doctype html>          <!--Html starts-->
+
+<html>
+  <head>
+    <title>Info3180-lab2</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/profile.css">     <!--gonna need to create the profile.css--> 
+    
+  </head>
+  
+  <header>
+      <h1 class="page-header"> Profile</h1> <!--Header/title-->
+  </header>
+  
+  
+  <body>                  <!--html main body starts-->
+  
+      <div id =' profilePic'>
+          <img src="{{url_for('static', filename= 'StrongBlackWoman.jpg') }}" width="260" height="220">
+      </div>
+      
+      
+      <table id = "profileTableID">     <!--creating table to hold items for user profile-->
+          <tbody>
+              
+              
+              <tr>    <!-- table row element-->
+                  <td>    <!--table data -->
+                      <div id ='name'>
+                          <h1> Tavya Wright</h1>
+                      </div>
+                  </td>
+              </tr>
+              
+                <tr>    <!-- table row element-->
+                  <td>    <!--table data -->
+                      <div id ='timeinfo'>
+                          <p>Today's date is: {{time}}</p>       <!--{{time }} is the variable name used in the profile method so time will show here -->
+                      </div>
+                  </td>
+              </tr>
+              
+              <tr>    <!-- table row element-->
+                  <td>    <!--table data -->
+                      <div class ='profile'>
+                         <p>  <!--paragraph element.. just regular text in this tag  -->
+                             Username: Skitts
+                         </p>
+                         
+                         <p> ID number: 620056166</p>
+                         
+                         <p> Age: 23</p>
+                         
+                         <p> Gender: Female</p>
+                         
+                         <br>
+                         
+                         <p> I like skittles</p>
+                      </div>
+                  </td>
+              </tr>
+              
+              
+          </tbody>
+          
+      </table>
+      
+  </body>
+  
+  {% endblock %}    <!-- this tells that the jinja should stop processing the html elements here-->
