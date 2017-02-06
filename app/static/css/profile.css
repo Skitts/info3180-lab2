@@ -1,32 +1,35 @@
 body{
-  background-color: green;
+  background-color: #FFFFFF;
   
 }
 
-#profileTableID
+#profileTableID /* this is the link in the profile.html file that has the tag "id=profileTableID*/
 {
-  margin-top:-30%;
-  margin-left:50%;
+  margin-top:-220px;
+  margin-left:300px;
+  margin-bottom: 100px;
+  position: relative;
 }
 .profile{
-      background:blue;
+      background:#FFFFFF;
       border:2px solid black;
-      color: black;
-  
+      color: grey;
 }
+
 #timeinfo{
-  background:blue;
+  background:#FFFFFF;
   border:2px solid black;
-  background:blue;
+  background:#FFFFFF;
   width:400px;
   height:40px;
   }
 
 #profilePic{
-  
   float:left;
 }
+
+
 #name{
-  background:blue;
+  background:#FFFFFF;
   border:2px solid black;
 }
